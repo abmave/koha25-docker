@@ -1,0 +1,11 @@
+# Datos persistentes
+data/
+
+# Configuración local
+.env
+
+# VS Code
+.vscode/
+
+# Archivos temporales
+*.log
