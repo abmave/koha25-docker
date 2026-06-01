@@ -1,7 +1,7 @@
 # Proyecto KOHA 25 Docker
 
 Objetivo:
-Migrar KOHA 21.11 a KOHA 25 usando Docker.
+Implementar una instalación limpia de KOHA 25 en Docker para la Biblioteca Municipal de Lima.
 
 Fases:
 1. Instalación limpia KOHA 25
@@ -66,3 +66,56 @@ Puertos:
 Estado:
 
 - Contenedores desplegados correctamente mediante Docker Compose.
+### Infraestructura Base Validada
+
+Fecha: 2026-06-01
+
+Servicios operativos:
+
+- MariaDB 10.11
+- Memcached
+- Elasticsearch 8.13.4
+
+Validaciones:
+
+- MariaDB: ready for connections.
+- Elasticsearch: API accesible en http://localhost:9200.
+- Docker Compose operativo.
+- Infraestructura versionada en Git.
+### Estado del laboratorio
+
+Infraestructura base desplegada:
+
+- MariaDB 10.11
+- Memcached
+- Elasticsearch 8.13.4
+
+Repositorio Git:
+
+- Commit inicial.
+- Commit infraestructura base.
+
+Próxima fase:
+
+- Instalación Koha 25.
+## Estado actual
+
+Infraestructura desplegada:
+
+- MariaDB 10.11
+- Memcached
+- Elasticsearch 8.13.4
+
+Docker:
+
+- Red koha25-docker_default creada.
+- Volúmenes persistentes preparados.
+
+Repositorio Git:
+
+- Commit inicial.
+- Commit infraestructura base.
+
+Próxima fase:
+
+- Despliegue de Koha 25.
